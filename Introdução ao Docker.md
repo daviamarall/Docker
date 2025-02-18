@@ -13,6 +13,7 @@ A instalação do Docker varia dependendo do sistema operacional. Para sistemas 
 
 #### Comandos básicos do Docker
 - `docker pull`: Baixa uma imagem do Docker Hub.
+- `docker images`: Lista imagens.
 - `docker run`: Cria e inicia um contêiner a partir de uma imagem.
 - `docker ps`: Lista os contêineres em execução.
 - `docker stop`: Para a execução de um contêiner.
