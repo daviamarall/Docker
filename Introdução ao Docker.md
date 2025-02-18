@@ -173,3 +173,33 @@ docker volume rm meu_volume
 ```
 
 ---
+
+### Como verificar os containers que pararam:
+Rode:
+```bash
+docker ps -a
+```
+Isso listará **todos** os containers, incluindo os que já pararam.
+
+### Como rodar o container em modo interativo corretamente:
+Se quiser manter o container ativo e interagir com ele, use:
+```bash
+docker run -it ubuntu bash
+```
+Isso mantém um shell interativo.
+
+Se você quiser iniciar um container em segundo plano (modo *daemon*), use:
+```bash
+docker run -dit --name meu_ubuntu ubuntu
+```
+Depois, pode acessá-lo com:
+```bash
+docker exec -it meu_ubuntu bash
+```
+
+Caso queira reiniciar um container parado, primeiro descubra o `CONTAINER ID` usando `docker ps -a` e depois:
+```bash
+docker start -ai <CONTAINER_ID>
+```
+
+Se precisar de mais alguma ajuda, me avise! 🚀
