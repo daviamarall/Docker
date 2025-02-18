@@ -173,5 +173,3 @@ docker volume rm meu_volume
 ```
 
 ---
-
-Esses são os comandos mais comuns do Docker com exemplos práticos. Se precisar de mais alguma coisa, é só perguntar! 🚀
